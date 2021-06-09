@@ -2,6 +2,7 @@ const optionTools = require('./tools')
 const app = require("express")();
 const httpServer = require("http").createServer(app);
 const bodyParser = require('body-parser');
+const token = require('./token')
 
 const fs = require('fs')
 // 服务器 连接 币安
@@ -9,8 +10,8 @@ const api = require('./lib/binance'); //初始化api
 const binanceWS = new api.BinanceWS(true); //创建服务
 const binanceOptionWS = new api.BinanceOptionWS(true)
 const binanceRest = new api.BinanceRest({
-    secret: '',
-    key: '',
+    secret: token.secret,
+    key: token.key,
     baseUrl: 'https://vapi.binance.com/'
 })
 
