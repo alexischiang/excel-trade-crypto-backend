@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # private token
-.token.js
+token.js
