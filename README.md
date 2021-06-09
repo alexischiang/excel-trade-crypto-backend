@@ -9,6 +9,11 @@ Excel-Trade-Crypto 本地后端服务
 
 
 ## 使用方法
+- 输入Api Key&secret 
+```bash
+在./index.js line 11处填入自己的api key和secret
+```
+
 - macOS
 ```bash
 npm i 
