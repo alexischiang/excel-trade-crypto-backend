@@ -9,9 +9,12 @@ Excel-Trade-Crypto 本地后端服务
 
 
 ## 使用方法
-- 输入Api Key&secret 
-```bash
-在./index.js line 11处填入自己的api key和secret
+- 根目录下新建token.js 格式如下
+```javascript
+module.export = {
+    secret: '', // your secret key
+    key: '', // your api key
+}
 ```
 
 - macOS
